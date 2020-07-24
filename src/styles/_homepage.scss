@@ -1,7 +1,71 @@
 .homepage {
-    padding: 5rem;
-    font-size: 3rem;
-    & ul {
-        display: flex;
+    
+    &  .hero {
+            text-align: center;
+
+        &  .heading {
+            font-size: 5rem;
+            margin: auto;
+            margin-top: 10rem;
+            letter-spacing: .4rem;
+            word-spacing: 1.5rem;
+            line-height: 7rem;
+
+            @media only screen and (max-width: 500px) {
+                font-size: 4rem;
+                letter-spacing: .3rem;
+                word-spacing: 1.2rem;
+                line-height: 5rem;
+            }
+        }
+        &  .text {
+            max-width: 45vw;
+            font-size: 1.8rem;
+            letter-spacing: .3rem;
+            line-height: 3rem;
+            margin: auto;
+            padding: 2rem 0;
+
+            @media only screen and (max-width: 500px) {
+                max-width: 100%;
+                padding: 2rem 1rem;
+            }
+        }
+    }
+
+    &  .about {
+        padding: 10rem 0;
+        &  .img {
+            grid-column: 3/6;
+
+            &  img {
+                width: 100%;
+                overflow: hidden;
+            }
+        }
+        &  .content {
+
+            grid-column: 6/9;
+            padding: 3rem;
+
+            &  .heading {
+                font-size: 3rem;
+                margin: 2rem 0;
+            }
+
+            &  .blocks {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 2rem;
+                padding: 2rem 0;
+
+                &  .block {
+                    &  h3 {
+                        font-size: 2rem;
+                        padding: 1rem 0;
+                    }
+                }
+            }
+        }
     }
 }

@@ -2,8 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    display: grid;
-    grid-template-columns: minmax(2rem, 1fr) repeat(8, minmax(8rem, 14rem)) minmax(2rem, 1fr);
+    
 
     &  .logo {
         grid-column: 2/4;
@@ -31,3 +30,33 @@
 }
 
 
+.grid {
+    display: grid;
+    grid-template-columns: minmax(2rem, 1fr) repeat(8, minmax(8rem, 14rem)) minmax(2rem, 1fr);
+
+    @media only screen and (max-width: 500px) {
+        display: block;
+    }
+}
+
+.btn {
+    border: 1px solid currentColor;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 10rem;
+    background-color: black;
+    color: white;
+    transition: all .5s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: transparent;
+        color: black;
+    }
+}
+.btn_large {
+    box-shadow: 1px 1px 5px rgb(88, 88, 88);
+    font-size: 1.8rem;
+    padding: 1.5rem 6rem;
+}
