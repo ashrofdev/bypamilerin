@@ -1,10 +1,10 @@
 import React from 'react';
-import Navigation from './Navigation';
+import Header from './Header'
 
 const Layout = (props) => {
     return (
         <div className="layout">
-            <Navigation/>
+            <Header/>
             {props.children}
         </div>
     );
