@@ -1,10 +1,13 @@
 import React from 'react';
+import Layout from '../components/Layout';
 
 const Services = () => {
     return (
-        <div className="services">
-            Services page
-        </div>
+        <Layout>
+            <div className="services">
+                Services page
+            </div>
+        </Layout>
     );
 };
 

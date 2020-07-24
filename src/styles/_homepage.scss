@@ -1,4 +1,7 @@
 .homepage {
     padding: 5rem;
     font-size: 3rem;
+    & ul {
+        display: flex;
+    }
 }

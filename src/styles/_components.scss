@@ -1,0 +1,11 @@
+.nav {
+
+    padding: 2rem;
+    font-size: 2rem;
+    &  ul {
+        display: flex;
+        &  li {
+            padding: 2rem;
+        }
+    }
+}
